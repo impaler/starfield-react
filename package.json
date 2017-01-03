@@ -1,0 +1,39 @@
+{
+  "name": "starfield-react",
+  "version": "0.0.1",
+  "description": "A react component that draws a starfield on a canvas element.",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && npm clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "dis-gui": "^2.0.0",
+    "lodash.debounce": "^4.0.8"
+  },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "nwb": "0.13.x",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "author": "Christopher Decoster",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component",
+    "scifi",
+    "stars",
+    "starfield"
+  ]
+}
