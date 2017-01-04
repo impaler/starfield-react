@@ -1,6 +1,6 @@
 {
   "name": "starfield-react",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A react component that draws a starfield on a canvas element.",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
