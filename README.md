@@ -15,7 +15,21 @@ import {Starfield} from 'starfield-react'
 render(<Starfield/>, document.querySelector('body'))
 ```
 
-See the demo app for more examples in `demo/src/index.js`
+The default Starfield will look like:
+
+![Default starfield render](https://github.com/impaler/starfield-react/blob/develop/demo/thumbnails/default-field.gif?raw=true)
+
+See the demo app for more examples in `demo/src/index.js`.
+
+The component has configurable through standard `propTypes` documented below, they let you achieve effects like this:
+
+![starRatio={1}](https://github.com/impaler/starfield-react/blob/develop/demo/thumbnails/starRatio={1}.gif?raw=true)
+ 
+![starSize={10}](https://github.com/impaler/starfield-react/blob/develop/demo/thumbnails/starSize={10}.gif?raw=true)
+ 
+![speed={13}starStyle={randomColor}](https://github.com/impaler/starfield-react/blob/develop/demo/thumbnails/speed={13}starStyle={randomColor}.gif?raw=true)
+
+![Exapander component](https://github.com/impaler/starfield-react/blob/develop/demo/thumbnails/Expander.gif?raw=true)
 
 
 ## React propTypes
