@@ -1651,14 +1651,6 @@ diff@3.1.0:
   version "3.1.0"
   resolved diff-3.1.0.tgz#9406c73a401e6c2b3ba901c5e2c44eb6a60c5385
 
-dis-gui@^2.0.0:
-  version "2.0.0"
-  resolved dis-gui-2.0.0.tgz#9fc02afa9cf5092fcb4ed77b5583c92819d50155
-  dependencies:
-    lodash.clonedeep "^4.5.0"
-    lodash.merge "^4.6.0"
-    sprintf "^0.1.5"
-
 dom-converter@~0.1:
   version "0.1.4"
   resolved dom-converter-0.1.4.tgz#a45ef5727b890c9bffe6d7c876e7b19cb0e17f3b
@@ -3096,10 +3088,6 @@ lodash.keys@^3.0.0:
     lodash._getnative "^3.0.0"
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
-
-lodash.merge@^4.6.0:
-  version "4.6.0"
-  resolved lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5
 
 lodash.mergewith@^4.6.0:
   version "4.6.0"
@@ -4731,10 +4719,6 @@ split2@^1.0.0:
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c
-
-sprintf@^0.1.5:
-  version "0.1.5"
-  resolved sprintf-0.1.5.tgz#8f83e39a9317c1a502cb7db8050e51c679f6edcf
 
 sshpk@^1.7.0:
   version "1.10.1"
