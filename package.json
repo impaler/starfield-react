@@ -1,6 +1,6 @@
 {
   "name": "starfield-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component that draws a starfield on a canvas element.",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
@@ -16,7 +16,6 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "dis-gui": "^2.0.0",
     "lodash.debounce": "^4.0.8"
   },
   "peerDependencies": {
