@@ -3,6 +3,16 @@
 /es
 /node_modules
 /umd
+/demo
+/demo/thumbnails
+/tests
+/src
 npm-debug.log*
 yarn-error.log*
+CONTRIBUTING.md
+nwb.config.js
+yarn.lock
+.editorconfig
+.travis.yml
 .idea
+.vscode
