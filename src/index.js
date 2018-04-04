@@ -1,24 +1,8 @@
-import Expander from './components/Expander'
-import Starfield from './components/Starfield'
-
-let ExpandingStarfield = Expander(Starfield)
-
-function randomColor() {
-    let letters = '0123456789ABCDEF'
-    let color = new Array(6)
-        .fill(null)
-        .map(() => letters[Math.floor(Math.random() * 16)])
-        .join('')
-
-    return `#${color}`
-}
-
-
-export default Starfield
-
-export {
-    Expander,
-    Starfield,
-    ExpandingStarfield,
-    randomColor,
-}
+"use strict";
+exports.__esModule = true;
+var Starfield_1 = require("./Starfield");
+exports.Starfield = Starfield_1.Starfield;
+var Expander_1 = require("./Expander");
+exports.Expander = Expander_1.Expander;
+var color_1 = require("./color");
+exports.randomColor = color_1.randomColor;
