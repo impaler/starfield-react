@@ -1,45 +1,48 @@
 {
   "name": "starfield-react",
-  "version": "2.0.0",
-  "description": "A react component that draws a starfield on a canvas element.",
+  "version": "3.0.0",
+  "description": "A React component that draws a Starfield on a canvas dom element.",
   "author": "Christopher Decoster",
   "license": "MIT",
   "repository": "https://github.com/impaler/starfield-react",
-  "main": "dist/starfield.cjs.js",
-  "module": "dist/starfield.esm.js",
-  "browser": "dist/starfield.umd.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/starfield-react.js",
+  "umd:main": "dist/starfield-react.umd.js",
+  "module": "dist/starfield-react.mjs",
+  "source": "src/index.ts",
+  "types": "dist/src/starfield-react.d.ts",
   "scripts": {
-    "build:dev": "rollup --config --dir build",
-    "build:dist": "rollup --config --environment BUILD:production",
-    "build:demo": "rollup -c demo/demo-rollup.config.js"
+    "clean": "rm -rf dist && rm -rf example/dist",
+    "dev:example": "parcel ./example/index.html --out-dir example/dist",
+    "dev:build": "microbundle watch",
+    "build": "microbundle src/index.ts --target web --output dist",
+    "test": "jest",
+    "prepublish": "npm run clean && npm run test && npm run build"
   },
-  "dependencies": {
-    "lodash.debounce": "4.0.8",
-    "tslib": "1.9.0"
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.6.0",
+    "@testing-library/react": "9.2.0",
+    "@types/jest": "24.0.18",
+    "@types/react": "16.8.17",
+    "@types/react-dom": "16.8.4",
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "jest-canvas-mock": "2.1.1",
+    "microbundle": "0.11.0",
+    "parcel": "1.12.3",
+    "react": "16.10.1",
+    "react-dat-gui": "4.0.0",
+    "react-dom": "16.10.1"
   },
   "keywords": [
-    "react-component",
+    "react",
     "scifi",
     "stars",
     "starfield"
-  ],
-  "devDependencies": {
-    "@types/react": "16.3.1",
-    "@types/react-dom": "16.0.4",
-    "awesome-typescript-loader": "4.0.1",
-    "babel-core": "6.26.0",
-    "react": "16.3.0",
-    "react-dom": "16.3.0",
-    "rollup": "0.57.1",
-    "rollup-plugin-babel": "3.0.3",
-    "rollup-plugin-buble": "0.19.2",
-    "rollup-plugin-commonjs": "9.1.0",
-    "rollup-plugin-node-resolve": "3.3.0",
-    "rollup-plugin-replace": "2.0.0",
-    "rollup-plugin-typescript2": "0.12.0",
-    "rollup-plugin-uglify": "3.0.0",
-    "rollup-typescript": "1.1.2",
-    "typescript": "2.8.1"
-  }
+  ]
 }

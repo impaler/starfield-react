@@ -1,9 +1,4 @@
-import { Starfield } from './components/Starfield'
-import { Expander } from './components/Expander'
-import { randomColor } from './components/color'
+import { useStarField } from './useStarField'
 
-export {
-  Expander,
-  Starfield,
-  randomColor,
-}
+export { StarField } from './StarField'
+export { useStarField } from './useStarField'
