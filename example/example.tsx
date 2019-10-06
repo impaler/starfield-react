@@ -1,13 +1,12 @@
 import * as React from 'react'
+import { useState } from 'react'
 import { render } from 'react-dom'
 import DatGui, { DatSelect, DatBoolean, DatColor, DatNumber, DatString } from 'react-dat-gui'
+import 'react-dat-gui/dist/index.css'
 
 import { StarField } from '../src'
 import { randomColor as randomColorGen } from './lib/color'
-
 import './index.css'
-import 'react-dat-gui/dist/index.css'
-import { useState } from 'react'
 
 const data = {
   count: 3000,

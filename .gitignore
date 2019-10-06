@@ -11,3 +11,6 @@ src/**/*.js
 src/**/*.js.map
 build
 dist
+.cache
+.rts2_cache*
+starfield-react-*.tgz

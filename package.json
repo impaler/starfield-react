@@ -1,6 +1,6 @@
 {
   "name": "starfield-react",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A React component that draws a Starfield on a canvas dom element.",
   "author": "Christopher Decoster",
   "license": "MIT",
