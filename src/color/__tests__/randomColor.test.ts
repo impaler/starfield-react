@@ -1,4 +1,4 @@
-import { randomColor } from '../color'
+import { randomColor } from '../randomColor'
 
 test('a random hex color string', () => {
   expectColor(randomColor())

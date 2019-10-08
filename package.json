@@ -9,7 +9,7 @@
   "umd:main": "dist/starfield-react.umd.js",
   "module": "dist/starfield-react.mjs",
   "source": "src/index.ts",
-  "types": "dist/src/starfield-react.d.ts",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist && rm -rf example/dist",
     "dev:example": "parcel ./example/index.html --out-dir example/dist",

@@ -1,6 +1,6 @@
 import { MutableRefObject, RefObject, useEffect } from 'react'
-import { ColorFunction, createStarsState, StarFieldState } from './StarState'
-import { drawStarField } from './drawStarField'
+import { ColorFunction, createStarsState, StarFieldState } from '../field/StarState'
+import { drawStarField } from '../field/drawStarField'
 
 export interface Options {
   count: number
@@ -39,6 +39,20 @@ export function useStarField(
     } else {
       initialState.stars.splice(0, initialState.stars.length - options.count)
     }
+  }
+
+  if (options.width !== initialState.width || options.height !== initialState.height) {
+    const { stars } = createStarsState({
+      count: options.count,
+      height: options.height,
+      width: options.width,
+    })
+    initialState.stars = stars
+    initialState.width = options.width
+    initialState.height = options.height
+    initialState.x = Math.round(options.width / 2)
+    initialState.y = Math.round(options.height / 2)
+    initialState.z = (options.width + options.height) / 2
   }
 
   useEffect(() => {

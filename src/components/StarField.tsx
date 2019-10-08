@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { useRef } from 'react'
-import { useStarField } from './useStarField'
-import { createStarsState, StarFieldState } from './StarState'
+import { useStarField } from '../hooks/useStarField'
+import { createStarsState, StarFieldState } from '../field/StarState'
 
-interface Props {
+export interface Props {
   // Width is passed through to the html canvas element
   width?: number
   // Height is passed through to the html canvas element

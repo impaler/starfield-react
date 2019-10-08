@@ -4,8 +4,7 @@ import { render } from 'react-dom'
 import DatGui, { DatSelect, DatBoolean, DatColor, DatNumber, DatString } from 'react-dat-gui'
 import 'react-dat-gui/dist/index.css'
 
-import { StarField } from '../src'
-import { randomColor as randomColorGen } from './lib/color'
+import { StarField, randomColor as randomColorGen } from '../src'
 import './index.css'
 
 const data = {
