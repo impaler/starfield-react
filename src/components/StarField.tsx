@@ -35,6 +35,7 @@ export interface Props {
   // A flag to set no background of fillStyle of the canvas
   noBackground?: boolean
   className?: string
+  style?: React.CSSProperties
 }
 
 type ColorFunction = () => string
